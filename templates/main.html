@@ -9,9 +9,9 @@
     </head>
     <body>
         <h1>Scamazon Home</h1>
-        <h2>Completely safe shopping!</h2>
+        <h2><em>'Completely safe shopping!'</em></h2>
 
-        <form action="cart.html" method='POST'>
+        <form action="http://localhost:5000/cart" method='POST'>
             <div class='shopping-grid'>
                 <figure>
                     <img src="{{ url_for('static', filename = 'assets/books.png') }}" alt="books">
