@@ -4,17 +4,17 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css" type='text/css'>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'styles.css') }}" type='text/css'>
         <title>Scamazon Home</title>
     </head>
     <body>
         <h1>Scamazon Home</h1>
         <h2>Completely safe shopping!</h2>
 
-        <form action="cart.html" method='GET'>
+        <form action="cart.html" method='POST'>
             <div class='shopping-grid'>
                 <figure>
-                    <img src="https://via.placeholder.com/150" alt="books">
+                    <img src="{{ url_for('static', filename = 'assets/books.png') }}" alt="books">
                     <figcaption>
                         <div id="ck-button">
                             <label>
@@ -25,7 +25,7 @@
                 </figure>
 
                 <figure>
-                    <img src="https://via.placeholder.com/150" alt="tv">
+                    <img src="{{ url_for('static', filename = 'assets/tv.png') }}" alt="tv">
                     <figcaption>
                         <div id="ck-button">
                             <label>
@@ -36,7 +36,7 @@
                 </figure>
 
                 <figure>
-                    <img src="https://via.placeholder.com/150" alt="phone">
+                    <img src="{{ url_for('static', filename = 'assets/phone.png') }}" alt="phone">
                     <figcaption>
                         <div id="ck-button">
                             <label>
@@ -47,7 +47,7 @@
                 </figure>
 
                 <figure>
-                    <img src="https://via.placeholder.com/150" alt="Food">
+                    <img src="{{ url_for('static', filename = 'assets/food.png') }}" alt='food'>
                     <figcaption>
                         <div id="ck-button">
                             <label>
@@ -58,7 +58,7 @@
                 </figure>
 
                 <figure>
-                    <img src="https://via.placeholder.com/150" alt="furniture">
+                    <img src="{{ url_for('static', filename = 'assets/furniture.png') }}" alt="furniture">
                     <figcaption>
                         <div id="ck-button">
                             <label>
@@ -69,7 +69,7 @@
                 </figure>
 
                 <figure>
-                    <img src="https://via.placeholder.com/150" alt="Clothing">
+                    <img src="{{ url_for('static', filename = 'assets/clothing.jpeg') }}" alt="Clothing">
                     <figcaption>
                         <div id="ck-button">
                             <label>

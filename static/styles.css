@@ -58,3 +58,8 @@ figcaption {
     font-size: 50px;
     margin: 0 auto;
 }
+
+img {
+    width: 150px;
+    height: 150px;
+}
